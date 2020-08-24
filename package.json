@@ -8,7 +8,7 @@
     "build": "npx @11ty/eleventy",
     "copy": "cp node_modules/foundation-sites/dist/js/foundation.min.js js/",
     "sass:build": "node-sass scss -o css --output-style compressed",
-    "sass:watch": "npm run sass:build -w"
+    "sass:watch": "node-sass scss -o css --output-style compressed -w"
   },
   "author": "Martijn | Pinelab.studio",
   "license": "MIT",
