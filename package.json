@@ -1,0 +1,22 @@
+{
+  "name": "royschreuder.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm run sass:build && npm run copy && concurrently \"npm run sass\" \"npx @11ty/eleventy --serve\"",
+    "build": "npx @11ty/eleventy",
+    "copy": "cp node_modules/foundation-sites/dist/js/foundation.min.js js/",
+    "sass:build": "node-sass scss -o css --output-style compressed",
+    "sass:watch": "npm run sass:build -w"
+  },
+  "author": "Martijn | Pinelab.studio",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "foundation-sites": "^6.6.3",
+    "node-sass": "^4.14.1",
+    "concurrently": "^5.2.0"
+  }
+}
