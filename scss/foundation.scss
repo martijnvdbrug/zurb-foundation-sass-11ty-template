@@ -5,6 +5,9 @@ $header-font-family: 'Playfair Display', serif;
 $header-font-weight: 800;
 $body-font-family: 'Source Sans Pro', sans-serif;
 $body-font-color: #2C2222;
+$global-weight-normal: 400;
+$global-weight-bold: 800;
+$body-background: white;
 
 // Global styles
 @include foundation-global-styles;
