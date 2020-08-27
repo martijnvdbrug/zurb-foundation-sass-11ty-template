@@ -1,9 +1,10 @@
 @import './node_modules/foundation-sites/scss/foundation';
 
 /* Overall style */
-$header-font-family: 'Inconsolata', monospace;
-$body-font-family: 'Inconsolata';
-$body-font-color: #373333;
+$header-font-family: 'Playfair Display', serif;
+$header-font-weight: 800;
+$body-font-family: 'Source Sans Pro', sans-serif;
+$body-font-color: #2C2222;
 
 // Global styles
 @include foundation-global-styles;
